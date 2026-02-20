@@ -24,19 +24,23 @@ Se crea PostgresBlueprintPersistence que reemplaza la versión en memoria que es
 Verifica que no exista blueprint duplicado
 Inserta el blueprint y captura el ID autogenerado con KeyHolder
 Inserta todos los puntos con su point_order correcto
+
 2. getBlueprint(String author, String name):
 
 Busca el blueprint por author+name
 Obtiene todos sus puntos ordenados por point_order (crucial)
 Reconstruye el objeto Blueprint
+
 3. getBlueprintsByAuthor(String author):
 
 Obtiene todos los blueprints de un autor
 Para cada uno, carga sus puntos ordenados
 Devuelve un Set de Blueprints completos
+
 4. getAllBlueprints():
 
 Similar al anterior pero sin filtro de autor
+
 5. addPoint(String author, String name, int x, int y):
 
 Obtiene el point_order máximo actual
