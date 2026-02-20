@@ -58,7 +58,7 @@ Se utilizaron distintos comandos para comprobar el correcto funcionamiento de la
 Los cambios realizados, según lo que nos pedía el ejercicio se hacían en BlueprintsAPIController, para lo que pedían "Cambia el path base de los controladores a /api/v1/blueprints."
 Y de paso, se creó una clase genérica llamada ApiResponse, en donde se colocaron los códigos HTTP correctos, los cuales fueron los siguientes:
 
-´´
+
 /** 200 OK — consultas exitosas */
     public static <T> ApiResponse<T> ok(T data) {
         return new ApiResponse<>(200, "execute ok", data);
